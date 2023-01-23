@@ -174,10 +174,10 @@ pub fn create_loader<'a>(
         external_internal_function_hash_collision: feature_set
             .is_active(&error_on_syscall_bpf_function_hash_collisions::id()),
         reject_callx_r10: feature_set.is_active(&reject_callx_r10::id()),
-        dynamic_stack_frames: false,
+        dynamic_stack_frames: true,
         enable_sdiv: false,
         optimize_rodata: false,
-        static_syscalls: false,
+        static_syscalls: true,
         enable_elf_vaddr: false,
         reject_rodata_stack_overlap: false,
         new_elf_parser: false,
