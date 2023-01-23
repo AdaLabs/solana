@@ -53,7 +53,7 @@ CXX_FLAGS := \
 
 SBF_C_FLAGS := \
   $(C_FLAGS) \
-  -target sbf \
+  -target sbf -mcpu=sbfv2 -D SOL_SBFV2=1 \
   -fPIC
 
 SBF_CXX_FLAGS := \
